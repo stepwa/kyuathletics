@@ -460,7 +460,7 @@ transform:scale(0);
 }
 .picpa .bottompicpa{
 position: absolute;
-width:98%;
+width:98vw;
 height:19%;
 bottom:0px;
 z-index:;
