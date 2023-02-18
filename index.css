@@ -460,15 +460,18 @@ transform:scale(0);
 }
 .picpa .bottompicpa{
 position: absolute;
-width:100%;
+width:98%;
 height:19%;
 bottom:0px;
 z-index:;
 overflow:auto;
 display:flex;
 align-items: center;
-float:right;
+
 box-shadow:3px 3px 2px black;
+}
+.bottompicpa::-webkit-scrollbar{
+width:0px;
 }
 #displai {
 position: absolute;
@@ -488,7 +491,7 @@ color:orange;
 }
  .imgi{
 position: relative;
- width:100px;
+ min-width:100px;
  height:95%;
  background:white;
  margin:2px;
