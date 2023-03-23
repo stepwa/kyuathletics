@@ -1,6 +1,9 @@
-html {
-  scroll-behavior: smooth;
-}
+
+html{
+background:linear-gradient(90deg,lightblue,#1a1515);
+scroll-behavior: smooth;
+userselect:none;
+} 
 *{
 margin:0;
 padding:0;
@@ -11,8 +14,10 @@ position: relative;
 display:flex;
 flex-direction:column;
 align-items: center;
-height:350vh;
+height:1vh;
+width:100%;
 background:linear-gradient(90deg,lightblue,#1a1515);
+
 }
  #inp{
 position: absolute;
@@ -32,7 +37,7 @@ text-decoration:none;
 }
 
 .header{
-position: sticky;
+position: fixed;
 height:100px;
 width:100%;
 background:linear-gradient(55deg,white,#1a1515);
@@ -186,7 +191,7 @@ display:flex;
 align-items: center;
 flex-direction: Column;
 }
-.sprintc{
+.sprintc,.sprintfl,.sprintft,.sprintfh,.sprintt,.sprinto,.sprintfls{
 position:relative;
 height:;
 width:100%;
@@ -287,9 +292,11 @@ width:0px;
 background:linear-gradient(45deg,white,green);
 left:0;
 z-index:1;
-transition:0.02s ease-out;
+transition:0.005s ease;
 overflow: hidden;
 overflow:auto;
+
+
 }
 .navbar h4{
 position: absolute;
@@ -370,6 +377,10 @@ width:10px;
 background:blue;
 border-radius:50%;
 animation:mis 2s linear infinite;
+}
+.navba{
+width:220px;
+display:block;
 }
 .message {
 position: absolute;
@@ -462,18 +473,15 @@ transform:scale(0);
 }
 .picpa .bottompicpa{
 position: absolute;
-width:98vw;
+width:98%;
 height:19%;
 bottom:0px;
 z-index:;
 overflow:auto;
 display:flex;
 align-items: center;
-
+float:right;
 box-shadow:3px 3px 2px black;
-}
-.bottompicpa::-webkit-scrollbar{
-width:0px;
 }
 #displai {
 position: absolute;
@@ -493,10 +501,11 @@ color:orange;
 }
  .imgi{
 position: relative;
- min-width:100px;
+ min-width:25%;
  height:95%;
  background:white;
- margin:2px;
+ margin-right:2px;
+margin-left:2px;
  overflow: hidden;
  background-position: center;
 background-size:cover;
@@ -535,55 +544,81 @@ color:blue;
 border-radius:20%;
 }
 .mapp{
-position: absolute;
-height:450px;
+position: fixed;
+height:85vh;
 width:100%;
-background:black;
-z-index:4;
+bottom:0%;
+background:white;
+z-index:10;
 transform:scale(0);
-display:flex;
+
 justify-content: center;
+aligh-items: center;
 }
 .relmap{
 position: absolute;
-height:80%;
+height:100%;
 width:100%;
 margin:4px;
-background:linear-gradient(45deg,lightblue,skyblue);
+bottom:0;
+z-index:4;
+display:flex;
+justify-content: center;
+aligh-items: center;
+background:white;
+overflow:auto;
 }
 .track{
 position: absolute;
-bottom:2px;
-height:18%;
-width:100%;
-background:silver;
+bottom:2%;
+height:95%;
+width:89%;
+background:white;
 display:flex;
+box-shadow:3px 3px 7px silver;
 flex-direction:column;
-align-items: ;
-justify-content: ;
+align-items: center;
+justify-content: center;
 }
-.track .cord{
-position: relative;
-font-size:13px;
-font-weight:bold;
-font-style:italic;
-margin-left:10px;
-}
+
 .mapblo{
 transform:scale(1);
 }
 .mapp .mapdeli{
 position: absolute;
-right:10px;
-top:10px;
+right:2rem;
+top:15px;
 font-size:20px;
-color:orange;
-z-index:1;
+color: black;
+z-index:5;
 }
 @media screen and (min-width:400px){
 .header .sendbtn{
 position: absolute;
 left:90%;
+}
+#dis{
+width:60%;
+}
+.mapp{
+display:flex;
+
+}
+.mapp{
+width:35%;
+right:0;
+height:60%;
+bottom:0;
+z-index:60;
+transform:scale(1);
+}
+
+#paret{
+width:65%;
+left:0;
+}
+.mapdeli{
+display:none;
 }
 }
 @media screen and (min-width:1024px){
@@ -606,4 +641,24 @@ font-size:20px;
 .navbar h4{
 font-size:15px;
 }
+#dis{
+width:60%;
+}
+.mapp{
+display:flex;
+}
+}
+.nt{
+position: absolute;
+top:2%;
+decorations:underline;
+}
+.trn{
+position: absolute;
+height:80%;
+width:80%;
+background:silver;
+z-index:15;
+animation:tra 2s linear infinite;
+bottom:5%;
 }
