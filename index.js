@@ -98,12 +98,6 @@ var sprinto=[
  relay:"long",
  name:"Joseph Njuguna",
  time:"-/-"
-},
-{
- position:"--",
- relay:"long",
- name:"Allan kipkorir",
- time:"-/-"
 }];
 var sprintfl=[
  {
