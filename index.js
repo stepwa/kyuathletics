@@ -19,7 +19,7 @@ const bottompicpa=document.querySelector(".bottompicpa");
 var log=[
 {
  position:"3",
- name:"Isiah otieno",
+ name:"Isaiah otieno",
  time:"-/-"
 },
  {
