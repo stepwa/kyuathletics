@@ -1,5 +1,4 @@
 
-
 const di=document.querySelector(".di");
 const message=document.querySelector(".message");
 const messo=document.querySelector(".messo");
@@ -13,179 +12,140 @@ const longc=document.querySelector(".longc");
 const short=document.querySelector(".short");
 const ext=document.querySelector(".ext");
 const sendbtn=document.querySelector(".sendbtn");
+const bottompicpa=document.querySelector(".bottompicpa");
+
 
 
 var log=[
+{
+ position:"3",
+ name:"Isiah otieno",
+ time:"-/-"
+},
  {
- position:"1",
- relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- name:"kennedy pitter",
- time:"3:50"
-},
-{
-position:"2",
- relay:"long",
- name:"jammy nat",
- time:"3:50"
-},
-{
- position:"3",
- name:"peter",
- time:"3:50"
-}
-,
-{
- position:"3",
- name:"Timothy brian",
- time:"3:50"
-},
-{
  position:"4",
- name:"alfred janes",
- time:"3:50"
-},
-{
-position:"6",
  relay:"long",
- name:"lucus joc",
- time:"3:50"
+ name:"jared kipkorir",
+ time:"-/-"
 },
 {
- position:"1",
- name:"james",
- time:"3:50"
+ position:"7",
+ name:"Cornelius Kipruto",
+ time:"-/-"
 }
+
 ];
 var shot=[
- {
- position:"1",
+ 
+{
+ position:"4",
+ name:"Evans",
+ time:"-/-"
+},
+{
+ position:"6",
  relay:"long",
- name:"james",
- time:"3:50"
+ name:"Brian Oketch",
+ time:"-/-"
 },
 {
- position:"1",
- name:"james",
- time:"3:50"
-},
-{
-position:"1",
+ position:"--",
  relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- name:"james",
- time:"3:50"
-},
-{
-position:"1",
- relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- name:"james",
- time:"3:50"
+ name:"Emmanuel kipngeno",
+ time:"-/-"
 }
 ];
 var relay=[
+{
+ position:"1",
+ name:"Herman Mutwiri",
+ time:"-/-"
+},
  {
- position:"1",
+ position:"4",
  relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- name:"Stephen",
- time:"3:50"
-},
-{
-position:"1",
- relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"2",
- name:"james kuria",
- time:"3:50"
-},
-{
- position:"1",
- relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"1",
- name:"james",
- time:"3:50"
-},
-{
-position:"1",
- relay:"long",
- name:"james",
- time:"3:50"
-}];
+ name:"Faraj Wabuke",
+ time:"-/-"
+}
+
+
+
+];
 var sprint=[
+{
+ position:"5",
+ relay:"long",
+ name:"Brian Oketch",
+ time:"-/-"
+},
+ {
+ position:"8",
+ relay:"long",
+ name:"Brian Ngeno",
+ time:"-/-"
+
+}];
+var sprintt=[
+ {
+ position:"3",
+ relay:"long",
+ name:"John Mbugua",
+ time:"-/-"
+}];
+var sprinto=[
  {
  position:"1",
  relay:"long",
- name:"james",
- time:"3:50"
+ name:"Joseph Njuguna",
+ time:"-/-"
 },
 {
- position:"1",
- name:"Stephen",
- time:"3:50"
-},
-{
-position:"1",
+ position:"--",
  relay:"long",
- name:"james",
- time:"3:50"
-},
-{
- position:"2",
- name:"james kuria",
- time:"3:50"
-},
-{
+ name:"Allan kipkorir",
+ time:"-/-"
+}];
+var sprintfl=[
+ {
  position:"1",
  relay:"long",
- name:"james",
- time:"3:50"
+ name:"judy Wairimu",
+ time:"-/-"
 },
 {
- position:"1",
- name:"james",
- time:"3:50"
-},
-{
-position:"1",
+ position:"--",
  relay:"long",
- name:"james",
- time:"3:50"
+ name:"Magret Njuguna",
+ time:"-/-"
+}];
+var sprintft=[
+ {
+ position:"--",
+ relay:"long",
+ name:"Elizabeth Nanjalla",
+ time:"-/-"
+},
+{
+ position:"--",
+ relay:"long",
+ name:"Pictor Lumuyo",
+ time:"-/-"
+}];
+var sprintfh=[
+ {
+ position:"3",
+ relay:"long",
+ name:"Sheilar Chepkemboi",
+ time:"-/-"
+
+}];
+var sprintfls=[
+ {
+ position:"3",
+ relay:"long",
+ name:"judy Wairimu",
+ time:"-/-"
+
 }];
 var overall=[
  {
@@ -244,6 +204,12 @@ document.querySelector(".longc").innerHTML=`${guko(log)}`;
 document.querySelector(".shortc").innerHTML=`${guko(shot)}`;
 document.querySelector(".relayc").innerHTML=`${guko(relay)}`;
 document.querySelector(".sprintc").innerHTML=`${guko(sprint)}`;
+document.querySelector(".sprintt").innerHTML=`${guko(sprintt)}`;
+document.querySelector(".sprinto").innerHTML=`${guko(sprinto)}`;
+document.querySelector(".sprintfl").innerHTML=`${guko(sprintfl)}`;
+document.querySelector(".sprintfh").innerHTML=`${guko(sprintfh)}`;
+document.querySelector(".sprintft").innerHTML=`${guko(sprintft)}`;
+document.querySelector(".sprintfls").innerHTML=`${guko(sprintfls)}`
 function juko(arr){
 let update="";
 for(let i=0;i<arr.length;i++){
@@ -276,7 +242,8 @@ del.addEventListener("click",()=>{
 });
 add.addEventListener("click",()=>{
  navbar.style.width="220px";
- navbar.classList.toggle("navba");
+ navbar.classList.toggle(".navba");
+ 
 });
 let date=new Date();
 let d=date.getDate();
@@ -286,11 +253,11 @@ let ttdate=`${d}.${m}.${y}`;
 let arri=[
 {
 location:"EMBU",
-time:"2/9/2022"
+time:"2.9.2022"
 },
 {
 location:"JKUAT",
-time:"1/9/2022"
+time:"1.9.2022"
 }
 ];
 const evtcalender=document.querySelector(".evtcalender");
@@ -320,6 +287,10 @@ var messar=[
 {
  time:"23/12/2022",
  mess:"Merry Christmas to everyone"
+},
+{
+ time:"06/03/2022",
+ mess:"Great job done Team"
 }
 ];
 function messaf(mesar){
@@ -342,11 +313,15 @@ const mapp=document.querySelector(".mapp");
 const picpa=document.querySelector(".picpa");
 var imd=document.getElementsByTagName("img");
 var dis=document.getElementById("dis");
+let diz=false;
 for(let i=0;i< imd.length;i++){
  imd[i].addEventListener("click",(e)=>{
  dis.src=e.target.src;
-
+ 
 });
+if(diz==false){
+  dis.src=imd[0].src;
+}
 }
 function deli(){
   
@@ -363,25 +338,4 @@ function mapi(){
   mapp.classList.toggle("mapblo");
 }
 
-const longi=document.getElementById("longi");
-const lat=document.getElementById("lat");
-let latt;
-let longt;
-if(navigation.geolocation){
- navigation.geolocation.getCurrentPosition((position)=>{
-  longi.innerHTML=position.coords.longitude;
-  lat.innerHTML=position.coords.latitude;
-  longt=position.coords.longitude;
-  latt=position.coords.latitude;
-  const proxy="https://cors-anywhere.herokuapp.com/ ";
-   const Api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${latt}&lon=${longt}&appid={75f7fa3f9652cb8e47da62ba7991c0ea}`;
-   fetch(Api)
-    .then((promise)=>{
-         return promise.json();
-    })
-    .then((data)=>{
-     
-   });
-  
-  });
-}
+
