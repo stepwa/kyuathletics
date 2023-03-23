@@ -2,7 +2,7 @@
 html{
 background:linear-gradient(90deg,lightblue,#1a1515);
 scroll-behavior: smooth;
-userselect:none;
+user-select:none;
 } 
 *{
 margin:0;
