@@ -35,6 +35,14 @@ var log=[
 }
 
 ];
+var longct=[
+ {
+ position:"5",
+ relay:"long",
+ name:"Isaiah Otieno",
+ time:"-/-"
+
+}];
 var shot=[
  
 {
@@ -203,7 +211,8 @@ document.querySelector(".sprinto").innerHTML=`${guko(sprinto)}`;
 document.querySelector(".sprintfl").innerHTML=`${guko(sprintfl)}`;
 document.querySelector(".sprintfh").innerHTML=`${guko(sprintfh)}`;
 document.querySelector(".sprintft").innerHTML=`${guko(sprintft)}`;
-document.querySelector(".sprintfls").innerHTML=`${guko(sprintfls)}`
+document.querySelector(".sprintfls").innerHTML=`${guko(sprintfls)}`;
+document.querySelector(".longct").innerHTML=`${guko(longct)}`;
 function juko(arr){
 let update="";
 for(let i=0;i<arr.length;i++){
