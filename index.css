@@ -191,7 +191,7 @@ display:flex;
 align-items: center;
 flex-direction: Column;
 }
-.sprintc,.sprintfl,.sprintft,.sprintfh,.sprintt,.sprinto,.sprintfls{
+.sprintc,.longct,.sprintfl,.sprintft,.sprintfh,.sprintt,.sprinto,.sprintfls{
 position:relative;
 height:;
 width:100%;
